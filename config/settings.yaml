@@ -1,0 +1,28 @@
+data:
+  tickers:
+    - RELIANCE.NS
+    - TCS.NS
+    - HDFCBANK.NS
+    - INFY.NS
+    - ICICIBANK.NS
+    - SBIN.NS
+    - BHARTIARTL.NS
+    - ITC.NS
+    - KOTAKBANK.NS
+    - LT.NS
+    - AXISBANK.NS
+    - HINDUNILVR.NS
+    - BAJFINANCE.NS
+    - MARUTI.NS
+    - SUNPHARMA.NS
+  start_date: "2020-01-01"
+  end_date: "2026-01-01"
+  interval: "1d"
+
+model:
+  horizon: 10
+  long_threshold: 0.70     # Top 30% outperformers
+  short_threshold: 0.30    # Bottom 30% underperformers
+  frac_d: 0.40
+  n_splits: 5
+  embargo_pct: 0.01
